@@ -1,0 +1,12 @@
+- id: letsencrypt-renewal
+  alias: Let's Encrypt Renewal
+  trigger:
+  - at: 04:00:00
+    platform: time
+  action:
+  - data:
+      addon: core_letsencrypt
+    service: hassio.addon_start
+  - data:
+      addon: core_letsencrypt
+    service: hassio.addon_restart
