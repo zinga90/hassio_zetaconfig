@@ -205,18 +205,20 @@ tts:
 # Cloud
 cloud:
 
-#google assistant
-#google_assistant:
-#  project_id:
-#  api_key:
+####################################################
+#                                                  #
+#               google assistant                   #
+#                                                  #
+####################################################
+
 google_assistant:
   project_id: !secret project_id_googel_assistent
   api_key: !secret api_key_googel_assistent
-#  exposed_domains:
-#    - switch
-#    - light
-#    - group
-#    - climat
+  exposed_domains:
+    - switch
+    - light
+    - group
+    - climat
 
 #fritzbox:
 #  devices:
